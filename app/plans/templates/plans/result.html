@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Care Plan Result</title></head>
+<body>
+  <h1>Care Plan for {{ plan.patient_name }}</h1>
+  <p><strong>Age:</strong> {{ plan.age }} | <strong>Diagnosis:</strong> {{ plan.diagnosis }}</p>
+  <hr>
+  <pre style="white-space: pre-wrap;">{{ plan.generated_plan }}</pre>
+  <br>
+  <a href="/">← Generate Another</a>
+</body>
+</html>

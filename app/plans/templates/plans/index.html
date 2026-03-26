@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Care Plan Generator</title></head>
+<body>
+  <h1>Generate Care Plan</h1>
+  <form method="post">
+    {% csrf_token %}
+    <p><label>Patient Name: <input type="text" name="patient_name" required></label></p>
+    <p><label>Age: <input type="number" name="age" required></label></p>
+    <p><label>Diagnosis:<br><textarea name="diagnosis" rows="3" cols="50" required></textarea></label></p>
+    <p><label>Current Medications:<br><textarea name="medications" rows="3" cols="50" required></textarea></label></p>
+    <p><label>Additional Notes:<br><textarea name="notes" rows="3" cols="50"></textarea></label></p>
+    <button type="submit">Generate Care Plan</button>
+  </form>
+</body>
+</html>
